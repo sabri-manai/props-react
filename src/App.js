@@ -1,24 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './profile/Profile.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const alertName = (name) =>{return alert(name)}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<Profile fullName= 'Sara' bio = 'A good one' profession='doctor' alertName={alertName}>"https://cdn.icon-icons.com/icons2/1736/PNG/512/4043260-avatar-male-man-portrait_113269.png"</Profile> 
+     </div>
   );
 }
 
